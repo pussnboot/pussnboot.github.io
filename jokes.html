@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joke genrator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <nav>
+        <div>
+            <i class="fa fa-plane"></i>Seb's website
+        </div>
+
+        <div>
+            <a href="./INDEX.HTML"> <i class="fa fa-home"></i>Home</a>
+
+            <a href="./contact.html"> <i class="fa fa-phone-square"></i>Contact</a>
+
+            <a href="./Blog.html"> <i class="fa fa-book"></i>Blog</a>
+
+            <a href="./food.html"> <i class="fa-sharp fa-light fa-burger-soda"></i> Favorite Foods and Drinks</a>
+
+            <a href="jokes.html"> <i class="fa fa-joke"></i> Jokes</a>
+        </div>
+
+    </nav>
+</head>
+
+<body>
+
+    <h1 class="joke-title">JOKE Generator</h1>
+
+    <div id="jokes">
+    </div>
+    <button class="joke-button" onclick="generatejoke()"> Generate Joke</button>
+
+
+
+
+
+</body>
+
+<script>
+
+
+
+
+    var jokesArray = [
+        "Why was 6 afraid of 7?    Because 7 ATE 9!!!", "What do you call a bear with no teeth?       A gummy bear.", "there are only 10 kinds of people. those who understand binary and those who don't", "Why do golfers have two pairs of pants?               In case they get a hole in one!", "how do you fix a broken pumpkin. WIth a pumpkin patch"
+    ]
+
+    function generatejoke() {
+
+        var randomNumber = Math.random() * 4;
+
+        var randomInteger = Math.floor(randomNumber);
+
+        var randomJoke = jokesArray[randomInteger]
+
+        document.getElementById("jokes").innerHTML = randomJoke;
+    }
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Tutortials Point</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <i class="fa fa-computer"></i>Seb's website
+        </div>
+
+        <div>
+            <a href="./INDEX.HTML"> <i class="fa fa-home"></i>Home</a>
+
+            <a href="./contact.html"> <i class="fa fa-phone-square"></i>Contact</a>
+
+            <a href="./Blog.html"> <i class="fa fa-book"></i>Blog</a>
+
+            <a href="./food.html"> <i class="fa-sharp fa-light fa-burger-soda"></i> Favorite Foods and Drinks</a>
+
+            <a href="jokes.html"> <i class="fa fa-joke"></i> Jokes</a>
+        </div>
+
+    </nav>
+
+
+    <header role="banner">
+        <!--<h1>About Me</h1>-->
+        <!-- draggable="true" ondrag="myFunction()"-->
+    </header>
+    <div class="main_content" data_test="hi">
+        <h1 ondblclick="myFunction()" class="itatlic-text" id="intro">Fix This Title </h1>
+        <h2 onclick="changeName()">Click this button to fix title</h2>
+        <p> This page should be able to completely tell you about me.</p>
+        <p onclick="myFunction()" class="main-heading">I am a coder</p>
+    </div>
+    <div>
+
+
+        <img src="./profile photo.jpg" width="300" height="333" alt="profile photo">
+    </div>
+    <div>
+
+        <main-heading onclick="fact()">
+            FUN FACT ABOUT ME😀
+        </main-heading>
+
+    </div>
+    <div>
+        <h1> My video</h1>
+        <video controls autoplay>
+            <source src="watch.htm" type="video/mp4">
+        </video>
+        <br>
+        <br>
+
+
+        <a href="Http://tutorialspoint.com/">Tutortials point</a>
+    </div>
+
+
+
+    <h3>User Details Form</h3>
+    <form class="myForm" id="myForm">
+
+        <label for="first-name"> First Name </label>
+        <input type="text" name="first-name" id="first-name" placeholder="Hey write your name">
+
+        <br>
+
+        <label for="email"> Email </label>
+        <input type="email" name="email" id="email">
+
+        <br>
+
+        <label for="birthday"> birthday </label>
+        <input type="date" name="birthday" id="birthday">
+
+        <br>
+
+        <input type="submit" value="Submit This Form">
+    </form>
+
+    <section class="stories-section">
+
+        <h1>My Stories</h1>
+        <div>
+            <b>I went to st gemma from 1st garde to 6th grade. That is 6 years. I then went to Immulcata from 7st garde
+                to
+                8th grade. That is 2 years. ANd finally I am at my grade 11 year at canterbury.</b>
+        </div>
+        <div>
+            <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis animi enim hic praesentium reiciendis,
+                dolor quod tempora iusto fugit veritatis ab blanditiis ipsum vel dolores minima vitae, earum, provident
+                dolorum.</b>
+        </div>
+        <div>
+            <b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem voluptates, molestias distinctio
+                praesentium consectetur ipsam assumenda! Repudiandae, fuga hic sequi mollitia natus magnam amet. Magni
+                quae
+                distinctio excepturi numquam fuga.</b>
+        </div>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <script>
+        var first_name = "Sebastian";
+        var last_name = "Sell";
+
+
+        console.log(first_name);
+        console.log(last_name);
+
+        function calculateSum(firstNumber, secondNumber) {
+            var sumOfTwoNumbers = firstNumber + secondNumber;
+
+            return sumOfTwoNumbers;
+
+
+
+        }
+
+        var sum = (calculateSum(5, 10));
+
+        console.log(sum)
+
+
+
+        var emoji = "😀";
+        console.log(emoji)
+
+        function myFunction() {
+            var emoji = "😀";
+            console.log(emoji)
+
+            alert("hey don't click")
+        }
+
+
+        function changeName() {
+            document.getElementById("intro").innerHTML = "Hey Sebastian here "
+
+        }
+
+
+        document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
+
+        function handleFormSubmit(event) {
+            event.preventDefault()
+
+            var name = document.getElementById("first-name").value;
+            var email = document.getElementById("email").value;
+            var birthday = document.getElementById("birthday").value;
+
+            console.log(name)
+            console.log(email)
+            console.log(birthday)
+
+            document.getElementById("intro").innerHTML = name
+        }
+
+
+
+        function fact() {
+            var emoji = "😀";
+            console.log(emoji)
+
+            alert("I am 16 years old!")
+        }
+
+        var jokesArray = [
+            "Why was 6 afraid of 7?    Because 7 ATE 9!!!", "What do you call a bear with no teeth?       A gummy bear.", "there are only 10 kinds of people. those who understand binary and those who don't", "Why do golfers have two pairs of pants?               In case they get a hole in one!"
+        ]
+
+
+
+    </script>
+</body>
+
+</html>
